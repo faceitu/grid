@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color:#131415;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__photos_container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 110px 100px 150px 150px;
+    grid-gap: 10px;
+    width: 80%;
+   
+
+}
+
+.grid_photos {
+    
+    color:aliceblue;
+    border-radius: 20px;
+
+}
+
+.grid_photos:nth-child(1) {
+    background-image: url(./img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    animation: animacion1 2.5s ease-in-out;
+    animation-direction: alternate;
+    
+    
+ 
+   
+}
+.grid_photos:nth-child(2) {
+    background-image: url(./img/kimg2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    animation: animacion2 2.5s ease-in-out;
+    animation-direction: alternate;
+  
+
+}
+.grid_photos:nth-child(3) {
+    background-image: url(./img/img3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    animation: animacion3 2.5s ease-in-out;
+    animation-direction: alternate;
+ 
+}
+
+.grid_photos:nth-child(4) {
+    background-image: url(./img/img4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    animation: animacion4 2s ease-in-out;
+    animation-direction: alternate;
+   
+    
+    }
+    .grid_photos:nth-child(5) {
+        background-image: url(./img/img5.jpeg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        grid-column: 2/4;
+        grid-row: 4/5;
+        animation: animacion4 2s ease-in-out;
+        animation-direction: alternate;
+       
+
+    }
+    .grid_photos:nth-child(1):hover {
+        background-image: url(./img/img2.jpg);
+        transition: 1.5s;
+    }
+    .grid_photos:nth-child(2):hover {
+        background-image: url(./img/img3.jpg);
+        transition: 1.5s;
+    }
+    .grid_photos:nth-child(3):hover {
+        background-image: url(./img/img5.jpeg);
+        transition: 1.5s;
+    }
+    .grid_photos:nth-child(4):hover {
+        background-image: url(./img/img1.jpg);
+        transition: 1.5s;
+    }
+    .grid_photos:nth-child(5):hover {
+        background-image: url(./img/img4.jpg);
+        transition: 1.5s;
+    }
+
+@keyframes animacion1{
+     0% {
+            transform: translateY(-3000px);
+     }
+
+     
+     100% {
+        transform: translateY(0);
+
+     }
+}
+@keyframes animacion2{
+    0% {
+           transform: translateX(3000px);
+    }
+
+   
+    100% {
+       transform: translateX(0);
+
+    }
+}
+    @keyframes animacion3{
+        0% {
+               transform: translateY(3000px);
+        }
+    
+       
+        100% {
+           transform: translateY(0);
+    
+        }
+    }
+
+    @keyframes animacion4{
+        0% {
+               transform: translateY(3000px);
+        }
+    
+        
+        100% {
+           transform: translateY(0);
+       
+    
+        }
+    }
